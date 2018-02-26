@@ -23,7 +23,7 @@ public class SplashActivity extends BaseActivity implements SplashMvpView {
     @Override
     public void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_splash);
         DataManager dataManager = ((MvpApp) getApplication()).getmDataManager();
         mSplashPresenter = new SplashPresenter(dataManager);
         mSplashPresenter.onAttach(this);

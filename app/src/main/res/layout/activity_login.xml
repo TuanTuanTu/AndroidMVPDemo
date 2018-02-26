@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/edittext_email"
+        android:inputType="textEmailAddress"
+        android:id="@+id/editTextEmail"
+        app:layout_constraintTop_toBottomOf="parent"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textVisiblePassword"
+        android:hint="@string/edittext_password"
+        android:id="@+id/editTextPassword"
+        app:layout_constraintTop_toBottomOf="@id/editTextEmail"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/button"
+        android:text="@string/button_login"
+        app:layout_constraintTop_toBottomOf="@id/editTextPassword"/>
+</android.support.constraint.ConstraintLayout>
