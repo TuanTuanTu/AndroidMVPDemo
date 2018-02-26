@@ -7,6 +7,8 @@ import android.support.annotation.Nullable;
 
 import com.training.vungoctuan.mvpdemo.MvpApp;
 import com.training.vungoctuan.mvpdemo.R;
+import com.training.vungoctuan.mvpdemo.activity.login.LoginActivity;
+import com.training.vungoctuan.mvpdemo.activity.main.MainActivity;
 import com.training.vungoctuan.mvpdemo.model.DataManager;
 import com.training.vungoctuan.mvpdemo.view.BaseActivity;
 
@@ -32,15 +34,15 @@ public class SplashActivity extends BaseActivity implements SplashMvpView {
 
     @Override
     public void openMainActivity() {
-//        Intent intent = MainActivity.getStartIntent(this);
-//        startActivity(intent);
-//        finish();
+        Intent intent = MainActivity.getStartIntent(this);
+        startActivity(intent);
+        finish();
     }
 
     @Override
     public void openLoginActivity() {
-//        Intent intent = LoginActivity.getStartIntent(this);
-//        startActivity(intent);
-//        finish();
+        Intent intent = LoginActivity.getStartIntent(this);
+        startActivity(intent);
+        finish();
     }
 }
